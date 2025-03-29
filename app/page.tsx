@@ -1,7 +1,8 @@
 "use client"
 import Image from "next/image"
 import f1GPTLogo from "./assets/f1gpt-logo.png"
-import { useChat } from "ai/react"
+// import { useChat } from "ai/react"
+import { useChat } from "@ai-sdk/react"
 
 import { Message } from "ai"
 

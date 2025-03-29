@@ -1,5 +1,6 @@
 import { OpenAI } from "openai"
-import { OpenAIStream, StreamingTextResponse } from "ai"
+import { streamText } from "ai"
+import { openai as aiOpenAI } from "@ai-sdk/openai"
 import { DataAPIClient } from "@datastax/astra-db-ts"
 
 const {
@@ -63,14 +64,13 @@ export async function POST(req: Request) {
       `,
     }
 
-    const response = await openai.chat.completions.create({
-      model: "gpt-4",
+    const result = await streamText({
+      model: aiOpenAI("gpt-4"),
       messages: [template, ...messages],
-      stream: true,
+      temperature: 0.7,
     })
 
-    const stream = OpenAIStream(response)
-    return new StreamingTextResponse(stream)
+    return result.toDataStreamResponse()
   } catch (err) {
     console.log(err)
     return new Response("Internal Server Error", { status: 500 })
