@@ -16,3 +16,5 @@ A chatbot for F1 enthusiasts.
 - OpenAI
 - Vercel
 - Astra DB
+
+![F1GPT Screenshot](./app/assets/f1-gpt-screenshot.png)
