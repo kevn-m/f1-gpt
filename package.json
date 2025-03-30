@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "seed": "ts-node scripts/loadDb.ts",
-    "seed-st": "ts-node scripts/loadDbSentenceTransformers.ts",
+    "seed": "ts-node scripts/loadDbSentenceTransformers.ts",
     "lint": "next lint"
   },
   "dependencies": {
