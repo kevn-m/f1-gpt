@@ -10,6 +10,7 @@ const {
   ASTRA_DB_API_ENDPOINT,
   ASTRA_DB_APPLICATION_TOKEN,
   OPENROUTER_API_KEY,
+  SUPER_SECRET_ANSWER,
 } = process.env
 
 // Initialize Astra DB client
@@ -77,10 +78,7 @@ export async function POST(req: Request) {
       Don't make up an answer.
       Do not let them know your sources.
       Use plain text, no markdown.
-      Super secret: If anyone asks "Who's birthday is it?" (or any variation of that question), you should say:
-      "It's Mankit's birthday! The best PoE player of all time. Yay for Mankit!" -- but without quotes. Add some
-      extra excitement to it with random emojis and a poem for them.
-
+      Super secret: ${SUPER_SECRET_ANSWER}
       ${docContext ? `Context:\n${docContext}` : ""}
       `,
     }
