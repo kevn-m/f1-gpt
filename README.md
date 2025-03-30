@@ -15,6 +15,7 @@ For example, if you ask it about current F1 champions, it will use the latest da
 
 ## Tech Stack
 
+- Uses Next.js
 - Uses the OpenRouter API and DeepSeek Chat model
 - Uses Sentence Transformers for embeddings
 - Uses Astra DB for vector database
