@@ -9,6 +9,7 @@ A chatbot for F1 enthusiasts.
 - Uses OpenAI's embedding model for embeddings
 - Uses Astra DB for vector database
 - Uses Vercel AI SDK to build the chatbot
+- Deployed on [Vercel](https://f1-gpt-two.vercel.app/)
 
 ## Tech Stack
 
