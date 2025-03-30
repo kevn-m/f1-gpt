@@ -2,8 +2,11 @@ import PromptSuggestionButton from "./PromptSuggestionButton"
 
 const PromptSuggestionsRow = ({ onPromptClick }) => {
   const prompts = [
-    "What is the current F1 season?",
-    "Who is the highest paid F1 driver?",
+    "Who is Lewis Hamilton?",
+    "Who is the current F1 champion?",
+    "Why do people even like F1?",
+    "How much does each F1 team spend on a car?",
+    "Who makes the most money in F1?",
   ]
   return (
     <div className="prompt-suggestion-row">

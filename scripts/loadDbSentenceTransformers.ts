@@ -11,7 +11,7 @@ const {
   ASTRA_DB_NAMESPACE,
   ASTRA_DB_API_ENDPOINT,
   ASTRA_DB_APPLICATION_TOKEN,
-  ASTRA_DB_ST_COLLECTION,
+  ASTRA_DB_COLLECTION,
 } = process.env
 
 // F1 data sources
@@ -46,8 +46,8 @@ const createCollection = async (
   similarityMetric: SimiliarityMetric = "cosine"
 ) => {
   try {
-    console.log(`Creating collection: ${ASTRA_DB_ST_COLLECTION}`)
-    const res = await db.createCollection(ASTRA_DB_ST_COLLECTION, {
+    console.log(`Creating collection: ${ASTRA_DB_COLLECTION}`)
+    const res = await db.createCollection(ASTRA_DB_COLLECTION, {
       vector: {
         dimension: 384,
         metric: similarityMetric,
@@ -61,7 +61,7 @@ const createCollection = async (
 
 const loadSampleData = async () => {
   try {
-    const collection = await db.collection(ASTRA_DB_ST_COLLECTION)
+    const collection = await db.collection(ASTRA_DB_COLLECTION)
     const embedder = await getEmbeddingModel()
 
     for await (const url of f1Data) {

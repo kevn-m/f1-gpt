@@ -2,11 +2,13 @@
   "name": "f1-gpt",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "seed": "ts-node scripts/loadDbSentenceTransformers.ts",
+    "load-data": "ts-node scripts/dataLoader.ts",
     "lint": "next lint"
   },
   "dependencies": {

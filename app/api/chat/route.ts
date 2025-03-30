@@ -6,7 +6,7 @@ import { DataAPIClient } from "@datastax/astra-db-ts"
 // Initialize environment variables
 const {
   ASTRA_DB_NAMESPACE,
-  ASTRA_DB_ST_COLLECTION,
+  ASTRA_DB_COLLECTION,
   ASTRA_DB_API_ENDPOINT,
   ASTRA_DB_APPLICATION_TOKEN,
   OPENROUTER_API_KEY,
@@ -50,7 +50,7 @@ export async function POST(req: Request) {
       const embedding = Array.from(output.data) as number[]
 
       // Query Astra DB with the embedding
-      const collection = await db.collection(ASTRA_DB_ST_COLLECTION)
+      const collection = await db.collection(ASTRA_DB_COLLECTION)
       const cursor = collection.find(null, {
         sort: {
           $vector: embedding,
