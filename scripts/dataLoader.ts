@@ -18,6 +18,7 @@ const DATA_SOURCES = [
   "https://en.wikipedia.org/wiki/Lewis_Hamilton",
   "https://www.autosport.com/f1/",
   "https://www.formula1.com/en/latest/all",
+  "https://en.wikipedia.org/wiki/List_of_Formula_One_World_Drivers%27_Champions",
 ]
 
 // If true, will process URLs even if they're in the log file
