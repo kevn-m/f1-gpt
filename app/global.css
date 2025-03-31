@@ -88,33 +88,39 @@ input.question-box:focus::placeholder {
   opacity: 0.5;
 }
 
-input[type="submit"] {
-  min-width: 80px;
-  width: auto;
-  padding: 10px 15px;
+button[type="submit"] {
+  width: 15%;
+  padding: 10px;
   font-size: 16px;
   border: none;
   color: #fff;
   background-color: #0a84ff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 480px) {
-  input[type="submit"] {
-    min-width: 60px;
-    padding: 8px 12px;
+  button[type="submit"] {
+    padding: 8px;
     font-size: 14px;
   }
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: #007aff;
   transform: scale(1.05);
 }
 
-input[type="submit"]:active {
+button[type="submit"]:active {
   transform: scale(0.98);
+}
+
+button[type="submit"] svg {
+  width: 20px;
+  height: 20px;
 }
 
 input:focus {

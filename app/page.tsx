@@ -9,6 +9,7 @@ import { Message } from "ai"
 import Bubble from "./components/Bubble"
 import PromptSuggestionsRow from "./components/PromptSuggestionsRow"
 import LoadingBubble from "./components/LoadingBubble"
+import { FaPaperPlane } from "react-icons/fa"
 
 const Home = () => {
   const {
@@ -56,8 +57,10 @@ const Home = () => {
           onChange={handleInputChange}
           value={input}
           placeholder="Ask me something..."
-        ></input>
-        <input type="submit"></input>
+        />
+        <button type="submit" aria-label="Send message">
+          <FaPaperPlane />
+        </button>
       </form>
     </main>
   )
