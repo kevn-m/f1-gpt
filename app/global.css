@@ -12,6 +12,10 @@ body {
   background: linear-gradient(to bottom, #0a0a0a, #1a1a1a); /* Dark gradient */
 }
 
+.logo {
+  margin-bottom: 20px;
+}
+
 main {
   width: 80vh;
   height: 80vh;
