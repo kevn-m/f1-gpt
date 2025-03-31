@@ -65,6 +65,27 @@ input.question-box {
   font-size: 16px;
   color: #383838;
   border: none;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+input.question-box:hover {
+  background-color: #f0f0f0;
+}
+
+input.question-box:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+input.question-box::placeholder {
+  color: #a0a0a0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+input.question-box:focus::placeholder {
+  opacity: 0.5;
 }
 
 input[type="submit"] {
@@ -74,6 +95,17 @@ input[type="submit"] {
   border: none;
   color: #fff;
   background-color: #0a84ff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #007aff;
+  transform: scale(1.05);
+}
+
+input[type="submit"]:active {
+  transform: scale(0.98);
 }
 
 input:focus {
@@ -137,6 +169,19 @@ input:focus {
   border-radius: 10px;
   color: #383838;
   box-shadow: #958da533 0 8px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.prompt-suggestion-button:hover {
+  transform: scale(1.03);
+  box-shadow: #958da566 0 12px 28px;
+  background-color: #f8f8f8;
+}
+
+.prompt-suggestion-button:active {
+  transform: scale(0.98);
+  box-shadow: #958da533 0 6px 18px;
 }
 
 .messages-container {
