@@ -2,7 +2,7 @@
 
 A chatbot for F1 enthusiasts.
 
-This is a small personal project built to learn how to use open source tools to build a chatbot.
+This is a small personal project to learn how to use open source AI tools to build a chatbot.
 
 It ensures that latest F1 data is used by scraping the latest data from the internet and storing it in a vector database.
 
