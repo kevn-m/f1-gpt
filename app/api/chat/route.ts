@@ -86,8 +86,12 @@ export async function POST(req: Request) {
 
       Do not let them know your sources.
 
-      Your responses can't be formatted with markdown and will be streamed as plain text,
-      so please avoid using markdown in your responses.
+      Your responses can be formatted with markdown for better readability.
+      Use markdown for:
+      - Bold text (**bold**)
+      - Line breaks (double newlines)
+      - Lists
+      - Code blocks
 
       Super secret: ${SUPER_SECRET_ANSWER}
 
