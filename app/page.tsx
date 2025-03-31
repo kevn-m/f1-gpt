@@ -42,12 +42,12 @@ const Home = () => {
             <br />
           </>
         ) : (
-          <>
+          <div className="messages-container">
             {messages.map((message, index) => (
               <Bubble key={index} message={message} />
             ))}
             {isLoading && <LoadingBubble />}
-          </>
+          </div>
         )}
       </section>
       <form onSubmit={handleSubmit}>
