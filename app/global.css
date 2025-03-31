@@ -9,13 +9,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a); /* Dark gradient */
+  background: #222831;
+}
+
+.logo {
+  margin-bottom: 20px;
 }
 
 main {
   width: 80vh;
   height: 80vh;
-  background: #f5f5f5;
+  background: #eeeeee;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -35,7 +39,7 @@ section.populated {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  overflow: auto;
+  overflow: hidden;
   padding-right: 0;
   padding-bottom: 0;
   box-sizing: border-box;
@@ -69,7 +73,7 @@ input[type="submit"] {
   font-size: 16px;
   border: none;
   color: #fff;
-  background-color: #411b8d;
+  background-color: #0a84ff;
 }
 
 input:focus {
@@ -89,12 +93,13 @@ input:focus {
 
 .bubble.user {
   border-radius: 20px 20px 0 20px;
-  background-color: #e1f4ff;
+  background-color: #f2f2f7;
 }
 
 .bubble.assistant {
   border-radius: 20px 20px 20px 0;
-  background-color: #dce7ff;
+  background-color: #0a84ff;
+  color: #ffffff;
 }
 
 .loader {
@@ -132,4 +137,16 @@ input:focus {
   border-radius: 10px;
   color: #383838;
   box-shadow: #958da533 0 8px 24px;
+}
+
+.messages-container {
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 8px;
 }

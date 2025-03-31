@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <main>
-      <Image src={f1GPTLogo} alt="F1GPT Logo" width="250" />
+      <Image className="logo" src={f1GPTLogo} alt="F1GPT Logo" width="250" />
       <section className={noMessages ? "" : "populated"}>
         {noMessages ? (
           <>
@@ -42,12 +42,12 @@ const Home = () => {
             <br />
           </>
         ) : (
-          <>
+          <div className="messages-container">
             {messages.map((message, index) => (
               <Bubble key={index} message={message} />
             ))}
             {isLoading && <LoadingBubble />}
-          </>
+          </div>
         )}
       </section>
       <form onSubmit={handleSubmit}>
