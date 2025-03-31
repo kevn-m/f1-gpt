@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a); /* Dark gradient */
+  background: #222831;
 }
 
 .logo {
@@ -19,7 +19,7 @@ body {
 main {
   width: 80vh;
   height: 80vh;
-  background: #f5f5f5;
+  background: #eeeeee;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ input[type="submit"] {
   font-size: 16px;
   border: none;
   color: #fff;
-  background-color: #411b8d;
+  background-color: #0a84ff;
 }
 
 input:focus {
@@ -93,12 +93,13 @@ input:focus {
 
 .bubble.user {
   border-radius: 20px 20px 0 20px;
-  background-color: #e1f4ff;
+  background-color: #f2f2f7;
 }
 
 .bubble.assistant {
   border-radius: 20px 20px 20px 0;
-  background-color: #dce7ff;
+  background-color: #0a84ff;
+  color: #ffffff;
 }
 
 .loader {
