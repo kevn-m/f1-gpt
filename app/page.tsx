@@ -37,7 +37,7 @@ const Home = () => {
       <section className={noMessages ? "" : "populated"}>
         {noMessages ? (
           <>
-            <p>Ask me anything about the F1 season!</p>
+            <p>Ask me anything about the F1!</p>
             <PromptSuggestionsRow onPromptClick={handlePromptClick} />
             <br />
           </>
