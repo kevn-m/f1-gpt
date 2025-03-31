@@ -89,14 +89,23 @@ input.question-box:focus::placeholder {
 }
 
 input[type="submit"] {
-  width: 15%;
-  padding: 10px;
+  min-width: 80px;
+  width: auto;
+  padding: 10px 15px;
   font-size: 16px;
   border: none;
   color: #fff;
   background-color: #0a84ff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 480px) {
+  input[type="submit"] {
+    min-width: 60px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }
 
 input[type="submit"]:hover {
